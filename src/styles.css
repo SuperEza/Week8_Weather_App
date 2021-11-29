@@ -4,8 +4,12 @@ body {
 }
 
 h1 {
-  font-weight: bolder;
+  font-weight: 500px;
   color: #272343;
+}
+
+.headline {
+  font-weight: 500px;
 }
 
 h2 {

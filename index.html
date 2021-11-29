@@ -21,9 +21,9 @@
   </head>
   <body>
     <header>
-      <h1>
+      <h1 class="headline">
         <br />
-        Weather Forecast
+        The Weekly Weather
         <i class="fas fa-cloud-sun"></i>
       </h1>
       <form id="city-form">
@@ -34,15 +34,10 @@
           autocomplete="off"
           autofocus="on"
         />
+        <input type="submit" value="Search" class="submit" id="submit-button" />
         <input
           type="submit"
-          value="🔎 Search"
-          class="submit"
-          id="submit-button"
-        />
-        <input
-          type="submit"
-          value="📍 Current location"
+          value="Current location"
           class="current-location"
           id="current-location-button"
         />
@@ -86,14 +81,11 @@
               <img src="media/weather-lady.png" width="300" />
             </div>
           </div>
-
-          <hr />
           <div class="weather-forecast" id="forecast"></div>
           <br />
-          <hr />
         </div>
       </div>
-
+      <br />
       <footer>
         Developed by Sandie Eza Vickneswaravel. Link to my
         <a href="https://github.com/SuperEza/Week8_Weather_App" target="_blank"
