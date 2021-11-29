@@ -56,7 +56,7 @@ function displayForecast() {
       `
     <div class="col-2">
     <div class="text-center">
-      <div class="weather-forecast-date">Tue</div>
+      <div class="weather-forecast-date">${day}</div>
       <img
         src="http://openweathermap.org/img/wn/04d@2x.png"
         width="55"
@@ -69,14 +69,14 @@ function displayForecast() {
         <br />
       </div>
       </div>
-    </div>
   </div>`;
   });
+
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
 
-//search for city name, display weather
+//search for city name, display weather icon
 function displayWeatherCondition(response) {
   console.log(response.data);
   document.querySelector("#current-city").innerHTML = response.data.name;

@@ -5,11 +5,11 @@ body {
 
 h1 {
   font-weight: bolder;
-  color: #073a3dd8;
+  color: #272343;
 }
 
 h2 {
-  color: #085f63;
+  color: #272343;
   font-size: 24px;
 }
 
@@ -21,40 +21,40 @@ h2 {
   );
 }
 
-.header-img {
-  float: left;
-  display: inline;
-}
-
 .col {
   padding: 5px;
   background: #f1f1f162;
   border: 10px solid white;
   border-width: 5, 5, 5, 5;
   border-radius: 10px;
-  color: #053c3f;
+  color: #272343;
 }
 
 .header-temperature {
   font-size: 70px;
-  color: #053c3f;
+  color: #272343;
+}
+
+.header-degree-symbol {
+  font-size: 25px;
+  color: #272343;
 }
 
 .class-description {
   font-size: larger;
-  color: #085f63;
+  color: #272343;
   font-weight: normal;
 }
 
 .class-humidity {
   font-size: larger;
-  color: #085f63;
+  color: #272343;
   font-weight: normal;
 }
 
 .class-wind {
   font-size: larger;
-  color: #085f63;
+  color: #272343;
   font-weight: normal;
 }
 
@@ -126,7 +126,7 @@ h2 {
 
 .weather-forecast-temp-min {
   font-size: 17px;
-  color: #3f110580;
+  color: #272343;
   font-weight: 100px;
 }
 
@@ -135,6 +135,7 @@ h2 {
 }
 
 header {
+  padding-left: 85px;
   background: radial-gradient(
     circle at 10% 20%,
     rgb(241, 240, 248) 0%,
