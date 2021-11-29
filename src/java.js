@@ -43,6 +43,39 @@ let dateElement = document.querySelector("#current-time");
 let currentTime = new Date();
 dateElement.innerHTML = formatDay(currentTime);
 
+//display forecast
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col-2">
+    <div class="text-center">
+      <div class="weather-forecast-date">Tue</div>
+      <img
+        src="http://openweathermap.org/img/wn/04d@2x.png"
+        width="55"
+        alt=""
+        id="forecast-date-icon"
+      />
+      <div class="weather-forecast-temp">
+        <span class="weather-forecast-temp-max">18º</span>
+        <span class="weather-forecast-temp-min">11º</span>
+        <br />
+      </div>
+      </div>
+    </div>
+  </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 //search for city name, display weather
 function displayWeatherCondition(response) {
   console.log(response.data);
@@ -100,3 +133,4 @@ let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("New York");
+displayForecast();

@@ -1,5 +1,6 @@
 body {
-  font-family: roboto, Helvetica, Arial, sans-serif;
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  background: #ffffff;
 }
 
 h1 {
@@ -19,6 +20,11 @@ h2 {
   );
 }
 
+.header-img {
+  float: left;
+  display: inline;
+}
+
 .col {
   padding: 5px;
   background: #f1f1f162;
@@ -29,26 +35,26 @@ h2 {
 }
 
 .header-temperature {
-  font-size: 90px;
+  font-size: 70px;
   color: #053c3f;
 }
 
 .class-description {
   font-size: larger;
   color: #085f63;
-  font-weight: bolder;
+  font-weight: normal;
 }
 
 .class-humidity {
   font-size: larger;
   color: #085f63;
-  font-weight: bolder;
+  font-weight: normal;
 }
 
 .class-wind {
   font-size: larger;
   color: #085f63;
-  font-weight: bolder;
+  font-weight: normal;
 }
 
 .submit {
@@ -87,8 +93,30 @@ h2 {
   opacity: 0.7;
 }
 
+.weather-forecast-date {
+  font-size: 18px;
+  font-weight: bolder;
+  color: #053c3f;
+}
+
+.weather-forecast-temp-max {
+  font-size: 17px;
+  color: #053c3f;
+  font-weight: 600px;
+}
+
+.weather-forecast-temp-min {
+  font-size: 17px;
+  color: #3f110580;
+  font-weight: 100px;
+}
+
+.weather-forecast {
+  padding-bottom: 40px;
+}
+
 header {
-  background: linear-gradient(109.6deg, #3b9993b9 11.3%, #f1f1f1 100.2%);
+  background-image: url(media/weather-app.png);
   padding-left: 77px;
 }
 

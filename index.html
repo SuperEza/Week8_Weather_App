@@ -55,71 +55,45 @@
         <h1 class="city" id="current-city">Copenhagen</h1>
         <h2 id="current-time">Monday, 8. November 14:29</h2>
         <br />
-        <span>
-          <img
-            src="http://openweathermap.org/img/wn/04d@2x.png"
-            width="150"
-            id="main-icon"
-          />
-          <span class="header-temperature">
-            <span id="temperature">12</span>°C</span
-          >
-        </span>
-        <a id="celsius" href="">ºC</a> <a id="fahrenheit" href="">ºF</a>
-        <br />
-        <br />
-        <div class="class-description">
-          <span id="description">Clouds</span>
-        </div>
-        <div class="class-humidity">
-          Humidity: <span id="humidity">10</span> %
-        </div>
-        <div class="class-wind">Wind: <span id="wind">50</span> km/h</div>
-        <hr />
         <div class="row">
-          <div class="col">
-            <img src="media/sun.png" width="100" />
-            <br />
-            23°C
-            <br />
-            Monday
+          <div class="col-4">
+            <span>
+              <img
+                src="http://openweathermap.org/img/wn/04d@2x.png"
+                width="150"
+                id="main-icon"
+                class="header-img"
+              />
+              <span class="header-temperature">
+                <span id="temperature">12</span>°C</span
+              >
+            </span>
+            <a id="celsius" href="">ºC</a> <a id="fahrenheit" href="">ºF</a>
+          </div>
+          <br />
+          <br />
+          <div class="col-4">
+            <div class="class-description">
+              <span id="description">Clouds</span>
+            </div>
+            <div class="class-humidity">
+              Humidity: <span id="humidity">10</span> %
+            </div>
+            <div class="class-wind">Wind: <span id="wind">50</span> km/h</div>
+          </div>
+          <div class="col-4">
+            <div class="image-lady">
+              <img src="media/weather-lady.png" width="300" />
+            </div>
           </div>
 
-          <div class="col">
-            <img src="media/cloudy.png" width="100" />
-            <br />
-            20°C
-            <br />
-            Tuesday
-          </div>
-
-          <div class="col">
-            <img src="media/cloudy.png" width="100" />
-
-            <br />
-            18°C
-            <br />
-            Wednesday
-          </div>
-          <div class="col">
-            <img src="media/storm.png" width="100" />
-
-            <br />
-            16°C
-            <br />
-            Thursday
-          </div>
-          <div class="col">
-            <img src="media/rainy (1).png" width="100" />
-
-            <br />
-            18°C
-            <br />
-            Friday
-          </div>
+          <hr />
+          <div class="weather-forecast" id="forecast"></div>
+          <br />
+          <hr />
         </div>
       </div>
-      <hr />
+
       <footer>
         Created by Sandie Eza. Link to my
         <a
@@ -129,7 +103,6 @@
         >
       </footer>
     </div>
-    <br />
     <br />
     <script src="src/java.js"></script>
   </body>
