@@ -36,24 +36,24 @@ h2 {
 }
 
 .header-degree-symbol {
-  font-size: 25px;
+  font-size: 30px;
   color: #272343;
 }
 
 .class-description {
-  font-size: larger;
+  font-size: 22px;
   color: #272343;
   font-weight: normal;
 }
 
 .class-humidity {
-  font-size: larger;
+  font-size: 22px;
   color: #272343;
   font-weight: normal;
 }
 
 .class-wind {
-  font-size: larger;
+  font-size: 22px;
   color: #272343;
   font-weight: normal;
 }
@@ -115,23 +115,25 @@ h2 {
 .weather-forecast-date {
   font-size: 18px;
   font-weight: bolder;
-  color: #053c3f;
+  color: #272343;
 }
 
 .weather-forecast-temp-max {
   font-size: 17px;
-  color: #053c3f;
-  font-weight: 600px;
+  color: #272343;
+  font-weight: bold;
 }
 
 .weather-forecast-temp-min {
   font-size: 17px;
   color: #272343;
-  font-weight: 100px;
+  font-weight: normal;
 }
 
 .weather-forecast {
   padding-bottom: 40px;
+  padding-top: 40px;
+  background: rgba(172, 224, 217, 0.664);
 }
 
 header {
