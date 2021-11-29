@@ -20,43 +20,43 @@
     <title>🌤  🌧 ☀️</title>
   </head>
   <body>
-    <header>
-      <h1>
-        <br />
-        Weather Forecast
-        <i class="fas fa-cloud-sun"></i>
-      </h1>
-      <form id="city-form">
-        <input
-          type="search"
-          id="city-input"
-          placeholder="Enter a city ..."
-          autocomplete="off"
-          autofocus="on"
-        />
-        <input
-          type="submit"
-          value="🔎 Search"
-          class="submit"
-          id="submit-button"
-        />
-        <input
-          type="submit"
-          value="📍 Current location"
-          class="current-location"
-          id="current-location-button"
-        />
-      </form>
-      <br />
-    </header>
-    <br />
     <div class="container">
+      <header>
+        <h1>
+          <br />
+          Weather Forecast
+          <i class="fas fa-cloud-sun"></i>
+        </h1>
+        <form id="city-form">
+          <input
+            type="search"
+            id="city-input"
+            placeholder="Enter a city ..."
+            autocomplete="off"
+            autofocus="on"
+          />
+          <input
+            type="submit"
+            value="🔎 Search"
+            class="submit"
+            id="submit-button"
+          />
+          <input
+            type="submit"
+            value="📍 Current location"
+            class="current-location"
+            id="current-location-button"
+          />
+        </form>
+        <br />
+      </header>
+      <br />
       <div class="current-weather">
         <h1 class="city" id="current-city">Copenhagen</h1>
         <h2 id="current-time">Monday, 8. November 14:29</h2>
         <br />
         <div class="row">
-          <div class="col-4">
+          <div class="col-6">
             <span>
               <img
                 src="http://openweathermap.org/img/wn/04d@2x.png"
@@ -68,11 +68,12 @@
                 <span id="temperature">12</span>°C</span
               >
             </span>
-            <a id="celsius" href="">ºC</a> <a id="fahrenheit" href="">ºF</a>
+            <button class="temp-button" id="celsius" href="">ºC</button>
+            <button class="temp-button" id="fahrenheit" href="">ºF</button>
           </div>
           <br />
           <br />
-          <div class="col-4">
+          <div class="col-3">
             <div class="class-description">
               <span id="description">Clouds</span>
             </div>
@@ -81,9 +82,9 @@
             </div>
             <div class="class-wind">Wind: <span id="wind">50</span> km/h</div>
           </div>
-          <div class="col-4">
+          <div class="col-3">
             <div class="image-lady">
-              <img src="media/weather-lady.png" width="300" />
+              <img src="media/weather-lady.png" width="200" />
             </div>
           </div>
 
@@ -96,9 +97,7 @@
 
       <footer>
         Created by Sandie Eza. Link to my
-        <a
-          href="https://github.com/SuperEza/My.Weather.App.Sandie"
-          target="_blank"
+        <a href="https://github.com/SuperEza/Week8_Weather_App" target="_blank"
           >GitHub</a
         >
       </footer>

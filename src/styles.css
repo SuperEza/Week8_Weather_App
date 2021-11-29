@@ -10,6 +10,7 @@ h1 {
 
 h2 {
   color: #085f63;
+  font-size: 24px;
 }
 
 .btn-outline-secondary {
@@ -93,6 +94,24 @@ h2 {
   opacity: 0.7;
 }
 
+.temp-button {
+  padding: 5px 10px;
+  border-radius: 50px;
+  border: transparent;
+  font-weight: 600px;
+  font-size: 14px;
+  color: white;
+  background: #94c2c2;
+  transition: all 100ms ease;
+  box-shadow: rgba(37, 39, 89, 0.09) 0px 8px 8px 0;
+  cursor: pointer;
+  display: inline;
+}
+
+.temp-button:hover {
+  opacity: 0.7;
+}
+
 .weather-forecast-date {
   font-size: 18px;
   font-weight: bolder;
@@ -116,8 +135,11 @@ h2 {
 }
 
 header {
-  background-image: url(media/weather-app.png);
-  padding-left: 77px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(241, 240, 248) 0%,
+    rgb(172, 224, 217) 89.8%
+  );
 }
 
 footer {
